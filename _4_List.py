@@ -1,13 +1,13 @@
-# # Lists are used to store multiple items in a single variable.
-# # The list is changeable, meaning that we can change, add, and remove items in a list after it has been created
-# # Since lists are indexed, lists can have items with the same value //["apple", "banana", "cherry", "apple", "cherry"]
-# # List items can be of any data type:
-# #         list1 = ["apple", "banana", "cherry"]
-# #         list2 = [1, 5, 7, 9, 3]
-# #         list3 = [True, False, False]
-# # A list can contain different data types # list1 = ["abc", 34, True, 40, "male"]
-# # It is also possible to use the list() constructor when creating a new list:
-# #            thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# Lists are used to store multiple items in a single variable.
+# The list is changeable, meaning that we can change, add, and remove items in a list after it has been created
+# Since lists are indexed, lists can have items with the same value //["apple", "banana", "cherry", "apple", "cherry"]
+# List items can be of any data type:
+#         list1 = ["apple", "banana", "cherry"]
+#         list2 = [1, 5, 7, 9, 3]
+#         list3 = [True, False, False]
+# A list can contain different data types # list1 = ["abc", 34, True, 40, "male"]
+# It is also possible to use the list() constructor when creating a new list:
+        #    thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
 # # -----------------------------------------------------------------------------------------------------------
 # #  ACCESSING ITEMS OF THE LIST
 # # -----------------------------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@
 # # OTHER VERY IMPORTANT USECASES
 # # -----------------------------------------------------------------------------------------------------------
 # # ____________ Check if Item Exists _________________________
-# # thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # if "apple" in thislist:
 #   print("Yes, 'apple' is in the fruits list") # Yes, 'apple' is in the fruits list
 #
@@ -93,27 +93,27 @@
 #  index() || copy() || count() || list()
 # -----------------------------------------------------------------------------------------------------------
 
-# The count() method returns the number of times an elements occures in a list.
-points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
-x = points.count(9)
-print(x) # 2 that is, 9 occurs twice
+# # The count() method returns the number of times an elements occures in a list.
+# points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+# x = points.count(9)
+# print(x) # 2 that is, 9 occurs twice
 
-# --------------------------
-# The index() method returns the position at the first occurrence of the specified value.
-fruits = [4, 55, 64, 32, 16, 32]
-x = fruits.index(32)
-print(x) # 3
+# # --------------------------
+# # The index() method returns the position at the first occurrence of the specified value.
+# fruits = [4, 55, 64, 32, 16, 32]
+# x = fruits.index(32)
+# print(x) # 3
 
-# -----------------------------------------
-# he copy() method returns a copy of the specified list.
-fruits = ["apple", "banana", "cherry"]
-x = fruits.copy()
-print(x) # ["apple", "banana", "cherry"]
-# -----------------------------------------
-# Make a copy of a list with the list() method:
-thislist = ["apple", "banana", "cherry"]
-mylist = list(thislist)
-print(mylist)
+# # -----------------------------------------
+# # he copy() method returns a copy of the specified list.
+# fruits = ["apple", "banana", "cherry"]
+# x = fruits.copy()
+# print(x) # ["apple", "banana", "cherry"]
+# # -----------------------------------------
+# # Make a copy of a list with the list() method:
+# thislist = ["apple", "banana", "cherry"]
+# mylist = list(thislist)
+# print(mylist)
 
 
 
@@ -214,11 +214,11 @@ print(mylist)
 #         newlist.append(x)
 # print(newlist) # ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 # # # ---List comprehension way---------
-# newlist = [x for x in fruits]
+# newlist = [x for x in fruits] # this means newlist = [] //looping:  for x in fruits // [x for x in fruits] will purpulate x in the newlist
 # print(newlist) # ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 
 # # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## EXAMPLES4: The iterable can be any iterable object, like a list, tuple, set etc.":
+# ## EXAMPLES4: The iterable can be any iterable object, like a list, tuple, set etc.":
 # mytuple = ('apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango')
 # newlist = []
 # for x in mytuple:
@@ -266,7 +266,7 @@ print(mylist)
 # for x in fruits:
 #     if x != "apple": #['watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 #         if "a" not in x: #['kiwi', 'melon']
-#
+
 #             x = x.replace(x[0],x[-1]).upper() # replace the first letter with the last letter, and change to uppercase
 #             newlist.append(x) #['KIWI', 'MELON']
 # print(newlist) # ['watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
@@ -295,7 +295,7 @@ print(mylist)
 # # By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case. thus,
 # #
 # #
-# # method -- will sort the list alphanumerically, ascending, by default:
+# method -- will sort the list alphanumerically, ascending, by default:
 # thislist = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'banana', 'mango']
 # thislist.sort()
 # print(thislist)  # ['apple', 'banana', 'carrot', 'grapes', 'green pear', 'kiwi', 'mango', 'orange', 'watermelon']
@@ -344,43 +344,43 @@ print(mylist)
 #
 
 # ----------------------------------------------
-# CUSTIMIZED SORT FUNCTION
-# Sort the list based on how close the number is to 50:
-def myfunc(n):
-    return abs(n - 50)
+# # CUSTIMIZED SORT FUNCTION
+# # Sort the list based on how close the number is to 50:
+# def myfunc(n):
+#     return abs(n - 50)
 
 
-thislist = [100, 50, 65, 82, 23]
-thislist.sort(key=myfunc)
-print(thislist)  # [50, 65, 23, 82, 100]
+# thislist = [100, 50, 65, 82, 23]
+# thislist.sort(key=myfunc)
+# print(thislist)  # [50, 65, 23, 82, 100]
 
-# The abs() built-in Python function returns the absolute value of a number.
-# In mathematics, the absolute value of a number refers to that number's distance from zero.
-# Essentially, it is how far away that number is from zero on the number line.
-# For example, the absolute value of the number five is five since the distance from zero to five is five units.
+# # The abs() built-in Python function returns the absolute value of a number.
+# # In mathematics, the absolute value of a number refers to that number's distance from zero.
+# # Essentially, it is how far away that number is from zero on the number line.
+# # For example, the absolute value of the number five is five since the distance from zero to five is five units.
 # ----------------------------------------------
 
-def compare(x, y):
-  return x ** 3 - y ** 3
+# def compare(x, y):
+#   return x ** 3 - y ** 3
 
-l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: compare(x, 0))
-print(l)
-
-
-def numeric_compare(x, y):
-  return x - y
-
-l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: numeric_compare(x, 0))
-print(l)
+# l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: compare(x, 0))
+# print(l)
 
 
-# ------------------------------------
-l = sorted([10,2,15,30,1000,24,74,81,19])
-print(l)
-l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: x)
-print(l)
+# def numeric_compare(x, y):
+#   return x - y
+
+# l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: numeric_compare(x, 0))
+# print(l)
 
 
+# # ------------------------------------
+# l = sorted([10,2,15,30,1000,24,74,81,19])
+# print(l)
+# l = sorted([10,2,15,30,1000,24,74,81,19], key=lambda x: x)
+# print(l)
+
+# -------------------------------------------------------------
 # def numeric_compare(x, y): #
 #   if x < y:
 #     return -1

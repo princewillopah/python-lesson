@@ -403,21 +403,21 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------------
 
-class Delivery:
-    service_charge = 1.5
+# class Delivery:
+#     service_charge = 1.5
 
-    def __init__(self):
-        self.menu = {1:["coconut curry",7.50],
-                     2: ["spicy tofu", 5.50],
-                     3: ["veg noddles", 8.70]
-                     }
-        self.order = []
-    def choose_in_menu(self):
-        for i in range(1,len(self.menu)+1):
-            print(i,self.menu[i][0]+" $"+str(self.menu[i][1]))
+#     def __init__(self):
+#         self.menu = {1:["coconut curry",7.50],
+#                      2: ["spicy tofu", 5.50],
+#                      3: ["veg noddles", 8.70]
+#                      }
+#         self.order = []
+#     def choose_in_menu(self):
+#         for i in range(1,len(self.menu)+1):
+#             print(i,self.menu[i][0]+" $"+str(self.menu[i][1]))
 
-d=Delivery()
-d.choose_in_menu()
+# d=Delivery()
+# d.choose_in_menu()
 
 
 
