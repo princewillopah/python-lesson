@@ -7,13 +7,13 @@
 #         list3 = [True, False, False]
 # A list can contain different data types # list1 = ["abc", 34, True, 40, "male"]
 # It is also possible to use the list() constructor when creating a new list:
-        #    thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+#            thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
 # # -----------------------------------------------------------------------------------------------------------
 # #  ACCESSING ITEMS OF THE LIST
-# # -----------------------------------------------------------------------------------------------------------
-# # we could use list[first-index:end-index]
-# # Note: The search will start at first-index (included) and end at end-index  (not included)
-# # Note: for nagative indexes, list[-first-index:-end-index], The search will start at first-index (included) and end-index (included), from the very last index of the list
+# -----------------------------------------------------------------------------------------------------------
+# we could use list[first-index:end-index]
+# Note: The search will start at first-index (included) and end at end-index  (not included)
+# Note: for nagative indexes, list[-first-index:-end-index], The search will start at first-index (included) and end-index (included), from the very last index of the list
 # thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # print(f" thislist => {thislist}") # ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango']
 # print(f" thislist[:] => {thislist[:]}") # ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango']
@@ -22,9 +22,9 @@
 # print(f" thislist[2:] => {thislist[2:]}") # ['cherry', 'orange', 'kiwi', 'melon', 'mango']
 # print(f" thislist[2:5] => {thislist[2:5]}") # ['cherry', 'orange', 'kiwi']
 # print(f" thislist[-4:-1] => {thislist[-4:-1]}") #  ['orange', 'kiwi', 'melon']
-#
-# # print(f" thislist[:] => {thislist[:]}")
-# # print(f" thislist[:] => {thislist[:]}")
+
+# print(f" thislist[:] => {thislist[:]}")
+# print(f" thislist[:] => {thislist[:]}")
 # # -----------------------------------------------------------------------------------------------------------
 # # OTHER VERY IMPORTANT USECASES
 # # -----------------------------------------------------------------------------------------------------------
@@ -157,7 +157,7 @@
 # thislist = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 # for x in thislist:
 #   print(x)
-# # -------------
+# # # -------------
 # thislist = ["apple", "banana", "cherry"]
 # for i in range(len(thislist)): # that is, for x in range(3) i.e for x in [0, 1, 2]
 #   print(thislist[i])
@@ -166,7 +166,7 @@
 #              ('CS 130', 'Python', 'Spring 2013', 'A')]
 # for id, name, semester, grade in gradebook:
 #     print(id, name, semester, grade)
-#
+# print("---------------")
 # for x in gradebook:
 #     print( x[0], x[1])
 # -----------------------------------------------------------------------------------------------------------
@@ -191,11 +191,12 @@
 #   if "e" in x: # if the current looped item contains "a"
 #     newlist.append(x) #append it to the new list
 # print(newlist) # ['apple', 'watermelon', 'green pear', 'orange', 'grapes', 'melon']
+# print("---------------")
 # # ---List comprehension way---------
 # newlist = [x for x in fruits if "e" in x] # [ x | for x in fruits | if "e" in x] this [x] in [] represent the new list
 # print(newlist) #['apple', 'watermelon', 'green pear', 'orange', 'grapes', 'melon']
 # # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# ## EXAMPLES1: Only accept items that are not "apple":
+## EXAMPLES1: Only accept items that are not "apple":
 # fruits = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 # newlist = []
 # for x in fruits:
@@ -207,7 +208,7 @@
 # print(newlist) # ['watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 
 # # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# ## EXAMPLES1: produce new list without any condition":
+## EXAMPLES1: produce new list without any condition":
 # fruits = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 # newlist = []
 # for x in fruits:
@@ -216,9 +217,30 @@
 # # # ---List comprehension way---------
 # newlist = [x for x in fruits] # this means newlist = [] //looping:  for x in fruits // [x for x in fruits] will purpulate x in the newlist
 # print(newlist) # ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
+# # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## EXAMPLES1: produce 2 new lists: one with ":
+# fruits = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
+# fruits_with_e = []
+# fruits_with_a = []
+# fruits_with_e_or_a = []
+# for x in fruits:
+#     if "e" in x:
+#         fruits_with_e.append(x)
+#     if "a" in x:
+#         fruits_with_a.append(x)
+#     if "e" in x or "a" in x:
+#         fruits_with_e_or_a.append(x)
+# print(f"Words with 'e': {fruits_with_e}")
+# print(f"Words with 'a': {fruits_with_a}")
+# print(f"Words with 'e' or 'a': {fruits_with_e_or_a}")
+# -------------------------
+
+# fruits_with_e = [x for x in fruits if "e" in x]
+# fruits_with_a = [x for x in fruits if "a" in x]
+# fruits_with_e_or_a = [x for x in fruits if "e" in x or "a" in x]
 
 # # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# ## EXAMPLES4: The iterable can be any iterable object, like a list, tuple, set etc.":
+## EXAMPLES4: The iterable can be any iterable object, like a list, tuple, set etc.":
 # mytuple = ('apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango')
 # newlist = []
 # for x in mytuple:
@@ -251,7 +273,7 @@
 # fruits = ['apple', 'watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 # newlist = []
 # for x in fruits:
-#     if x != "apple": #['watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
+# #     if x != "apple": #['watermelon', 'green pear', 'kiwi', 'carrot', 'orange', 'grapes', 'melon', 'mango']
 #         if "a" not in x: #['kiwi', 'melon']
 #             x = x.upper() # change each item here
 #             newlist.append(x) #['KIWI', 'MELON']

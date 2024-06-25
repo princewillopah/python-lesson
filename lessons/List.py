@@ -74,9 +74,18 @@ print()
 # ============================================================================================
 #  change in the list  --- mordify/edit/update the list
 # ============================================================================================
-# animals = ['lion', 'elephant', 'tiger', 'zebra', 'giraffe', 'monkey', 'kangaroo', 'hippopotamus', 'cheetah', 'rhinoceros']
+animals = ['lion', 'elephant', 'tiger', 'zebra', 'giraffe', 'monkey', 'kangaroo', 'hippopotamus', 'cheetah', 'rhinoceros']
 # # #         0        1         2         3        4         5           6          7                 8         9
 # # #             -10      -9        -8       -7        -6        -5         -4          -3             -2          -1
+
+
+# print(animals[4:7])
+animals[4:7] = ["goat","hen","cock","fly"]
+print(animals)
+# print(animals[9])
+# print(animals[5:9])
+# print(animals[5:10])
+# print(animals[0:2])
 # print(animals)
 # animals[4] = "dog"
 # print(animals)
@@ -94,9 +103,14 @@ print()
 # ============================================================================================
 # The insert() method inserts an item at the specified index:
 # extend()
-MaleName = ['Bob', 'Charlie', 'David','Frank', 'Isaac']
-FemaleNmae = ['Alice',  'Eva', 'Grace', 'Hannah', 'Jane']
+# MaleName = ['Bob', 'Charlie', 'David','Frank', 'Isaac']
+# FemaleNmae = ['Alice',  'Eva', 'Grace', 'Hannah', 'Jane']
 
+# print(FemaleNmae)
+# # FemaleNmae[-3:-2] = ["Queen","Lola"]
+# # FemaleNmae[3] = "Queen"
+# # FemaleNmae[4] = "Lola"
+# print(FemaleNmae[3:5])
 # print(FemaleNmae)
 # FemaleNmae.insert(2,"Amanda",)
 # print(FemaleNmae)
@@ -105,8 +119,8 @@ FemaleNmae = ['Alice',  'Eva', 'Grace', 'Hannah', 'Jane']
 # FemaleNmae.insert(3,["Peace","Gloriah","Agatha"])
 # print(FemaleNmae)
 
-MaleName.extend(FemaleNmae)
-print(MaleName)
+# MaleName.extend(FemaleNmae)
+# print(MaleName)
 
 
 
