@@ -3,6 +3,25 @@ print()
 print()
 
 
+
+
+# # 10 % 2  = remainder
+# # all even numbers, when they are divided by 2, the remainder will alway be 0
+# # all odd numbers, when they are divided by 2, the remainder will alway be 1
+
+# print('enter a number')
+# num1 = int(input())
+
+# if num1 % 2 == 0:
+#     print(f"{num1} is an even number")
+# elif num1 % 2 == 1:
+#       print(f"{num1} is an odd number")
+
+
+
+# print(f"{num1} / 2 = {ans}")
+# remainder = num1 % 2
+# print(f"the Remainder of {num1} / 2 = {remainder}") 
 #=============if statement--------------------------
 # num=int(input("enter number: "))
 # if(num%2==0):

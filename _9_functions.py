@@ -81,13 +81,13 @@
 # print(tot)
 
 #----------------------------------------------lambda function ---------------------------------------------------------------------
-add = lambda x,y: x+y
-sub = lambda x,y: x-y
-max = lambda x,y: x if x > y  else y
-fn=int(input("ENTER FIRST NUMBER: "))
-sn=int(input("ENTER SECOND NUMBER: "))
-print("maximum of {} and {} is {}".format(fn,sn,max(fn,sn)))
-print("sum and difference of {} and {} are {} and {} respectively".format(fn,sn,add(fn,sn),sub(fn,sn)))
+# add = lambda x,y: x+y
+# sub = lambda x,y: x-y
+# max = lambda x,y: x if x > y  else y
+# fn=int(input("ENTER FIRST NUMBER: "))
+# sn=int(input("ENTER SECOND NUMBER: "))
+# print("maximum of {} and {} is {}".format(fn,sn,max(fn,sn)))
+# print("sum and difference of {} and {} are {} and {} respectively".format(fn,sn,add(fn,sn),sub(fn,sn)))
 
 # largest_num = lambda a,b,c : a if a>b and a>c else b if b>a and b>c else c if c>a and c>b else a
 # ---------------------------------------map------------------------------------------------------------------------
@@ -150,6 +150,8 @@ print("sum and difference of {} and {} are {} and {} respectively".format(fn,sn,
 # aa=decorFunc(greet)
 # aa()
 # --------------------------------------------------
+
+
 
 
 
