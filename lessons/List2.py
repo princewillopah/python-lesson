@@ -44,7 +44,7 @@ ladies = ["Princess","Lola","Grace","Mercy"]
 # print(guys)
 
 
-football_team = ['Robert Lewandowski', 'Lionel Messi', 'Eden Hazard', 'Cristiano Ronaldo', 'Kevin De Bruyne', 'Mohamed Salah', 'Kylian Mbappé', 'Neymar Jr.']
+f['Robert Lewandowski', 'Lionel Messi', 'Eden Hazard', 'Cristiano Ronaldo', 'Kevin De Bruootball_team = yne', 'Mohamed Salah', 'Kylian Mbappé', 'Neymar Jr.']
 print(football_team)
 
 print()  # for space

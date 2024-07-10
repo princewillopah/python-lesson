@@ -1,3 +1,10 @@
+print()
+print()
+print()
+print()
+
+
+
 # def justPrint():
 #     print("i am a function")
 # justPrint()
@@ -12,6 +19,7 @@
 #     print("{} x {} = {}".format(n1, n2, (n1 * n2)))
 #     print("{} / {} = {}".format(n1, n2, (n1 / n2)))
 # basicOp(20,5)
+# basicOp(2,5)
 # ---------------------------------------------------------------
 # def simple(p,t):
 #     amount = 0
@@ -20,7 +28,7 @@
 #         interest = p * 0.05 * t
 #         amount =amount + p + interest
 #         print("({0:1}) {1:9}  {2:8}".format(i, interest, amount))
-#
+
 # pp=int(input("Enter Principal: "))
 # tt=int(input("Enter Number of Month: "))
 # simple(pp,tt)
@@ -34,7 +42,8 @@
 #     for i in names:
 #         print("hello {}".format(i))
 # greet("monica","tony","john","grace")
-
+# greet()
+# greet("john","grace")
 # -----------------------fac--------------------------------------------
 # def fac(num):
 #    if(num==0 | num==1):
@@ -115,7 +124,7 @@
 # def square(lis):
 #      for n in lis:
 #          yield (n**2)
-#
+
 # result = square(mylist)
 # for x in result:
 #     print(x, end=" ")
@@ -146,13 +155,30 @@
 #         externalFunc()
 #         print("i am from inner decor 2")
 #     return innerdecor
-#
+
 # aa=decorFunc(greet)
 # aa()
-# --------------------------------------------------
+# #
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+print()
+print()
+print()
+print()
 
 
 

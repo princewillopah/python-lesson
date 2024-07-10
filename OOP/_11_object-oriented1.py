@@ -2,18 +2,18 @@
 #     pi=3.142
 #     def __init__(self,radius=1):
 #         self.radius = radius
-#
+
 #     def setRadius(self,newR):
 #         self.radius = newR
 #     def getRadius(self):
 #         return self.radius
-#
+
 #     def area(self):
 #         return self.radius * self.radius * Circle.pi
-#
+
 # myc = Circle(5)
 # print("the area of radius {}, is {}".format(myc.radius,myc.area()))
-#
+
 # myc.radius=10
 # print("the area of radius {}, is {}".format(myc.radius,myc.area()))
 # myc.setRadius(15)
