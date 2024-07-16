@@ -340,7 +340,7 @@
 #
 # hh = MacBook()
 # hh.disp()
-# --------------------------multilevel inheritance--------------------------uugnjcghcgchgchgchgchgcgcgcghgchubbjyvhfhybjjjjjjgvhgfhgcfgfgyfyggfhfgjfygfhgcjgcfgc
+# --------------------------multilevel inheritance--------------------------
 # class physics:
 #     def vel(self,x,t):
 #         return x/t

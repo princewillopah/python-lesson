@@ -426,6 +426,29 @@ print()
 # ---------------------------------------------------------------------------------------------------------------
 
 
+# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary,' 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen']
+# male_names = ["James", "John", "Jack", "Joseph", "Joshua", "Jason", "Justin", "Jeremy", "Jordan", "Jeffrey", "Julian", "Joel", "Jasper"]
+
+
+# for name in female_names:
+#     print(f"{name}")
+
+# print()
+
+
+# for i, female_name in enumerate(female_names):
+#     print(f"{i}: {female_name}")
+
+# print()
+
+# for male_name, female_name in zip(male_names, female_names):
+#     print(f"{female_name} {male_name}")
+
+# print()
+
+
+# for i, (male_name, female_name) in enumerate(zip(male_names, female_names), start=1):
+#     print(f"{i}. {male_name} - {female_name}")
 
 
 
@@ -435,14 +458,24 @@ print()
 
 
 
+My_polybag  = ["2 cups of rice", "3 piece of fish", "1 chicken", "1 pack of 1 pack of salt Maggi", "1 cup of green beans"]
+
+print(f"My list of iteam: {My_polybag}")
 
 
+# print(My_polybag[0])
+# print(My_polybag[1])
+# print(My_polybag[2])
+# print(My_polybag[3])
+# print(My_polybag[4])
 
+# for item in My_polybag:
+#     print(item)
 
+# my_list = ["Rice"]
 
-
-
-
+# print(my_list)
+# print(my_list[0])
 
 
 
