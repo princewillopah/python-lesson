@@ -458,64 +458,28 @@ print()
 
 
 
-My_polybag  = ["2 cups of rice", "3 piece of fish", "1 chicken", "1 pack of 1 pack of salt Maggi", "1 cup of green beans"]
+# My_polybag  = ["2 cups of rice", "3 piece of fish", "1 chicken", "1 pack of 1 pack of salt Maggi", "1 cup of green beans"]
 
-print(f"My list of iteam: {My_polybag}")
+# # print(My_polybag)
 
 
-# print(My_polybag[0])
-# print(My_polybag[1])
-# print(My_polybag[2])
-# print(My_polybag[3])
-# print(My_polybag[4])
+# # print(My_polybag[0])
+# # print(My_polybag[1])
+# # print(My_polybag[2])
+# # print(My_polybag[3])
+# # print(My_polybag[4])
 
 # for item in My_polybag:
 #     print(item)
 
-# my_list = ["Rice"]
+# # my_list = ["Rice"]
 
-# print(my_list)
-# print(my_list[0])
-
-
+# # print(my_list)
+# # print(my_list[0])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# my_cooking_list = ['4 cups of onion', '1 cups of potato', '5 packs of carrot', '4 packs of carrot', '2 pieces of Maggi', '3 piece of tomato', '2 packs of chicken', '2 cups of Maggi', '2 cups of salt', '3 pieces of carrot', '5 packs of fish', '4 packs of onion', '1 pieces of green beans', '5 cups of Maggi', '2 cups of fish', '1 packs of carrot', '2 piece of salt', '1 cup of salt', '4 packs of rice', '4 packs of Maggi', '4 pack of carrot', '5 piece of rice', '4 packs of potato', '1 cups of chicken', '5 cups of carrot', '1 pieces of salt', '1 pieces of carrot', '5 cups of onion', '5 pieces of onion', '5 packs of Maggi', '1 cups of salt', '1 pieces of potato', '4 packs of tomato', '1 packs of Maggi', '2 pieces of green beans', '1 packs of carrot', '4 pack of rice', '1 packs of potato', '1 cups of chicken', '1 pieces of onion', '4 cups of onion', '2 pieces of rice', '1 cup of tomato', '2 cups of Maggi', '4 pieces of fish', '5 cups of carrot', '3 packs of green beans', '3 cup of carrot', '3 packs of salt', '5 cups of salt', '1 packs of green beans', '2 pack of potato', '4 pieces of chicken', '5 pieces of onion', '3 pack of green beans', '1 packs of potato', '5 cups of Maggi', '5 cups of rice', '1 pack of onion', '3 cups of tomato', '4 pack of carrot', '5 packs of potato', '5 cups of tomato', '1 pieces of onion', '3 packs of chicken', '4 cups of Maggi', '3 packs of tomato', '2 cups of onion', '3 packs of rice', '3 pieces of green beans', '1 cups of rice', '1 pieces of tomato', '2 pieces of rice', '5 packs of potato', '2 cups of fish', '5 packs of tomato', '5 cups of salt', '1 pieces of salt', '4 cups of carrot', '2 cups of carrot', '4 cups of potato', '3 packs of salt', '2 cups of Maggi', '2 pack of carrot', '1 piece of carrot', '5 packs of chicken', '4 packs of potato', '3 cup of green beans', '3 pieces of salt', '5 packs of Maggi', '3 packs of chicken', '1 cup of potato', '1 packs of tomato', '5 cups of tomato', '4 cup of green beans', '3 packs of carrot', '3 pieces of rice', '4 cups of chicken', '1 cups of onion', '2 cups of chicken']
 
 
 
