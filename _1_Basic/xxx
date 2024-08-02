@@ -1,0 +1,67 @@
+class Witches:
+   names = []
+   def addNames(self,name):
+        self.names.append(name)
+   def getNames(self):
+        ecounter = 0
+        gcounter = 0
+        count = 1
+        for i in range(len(self.names)):
+           gcounter += self.names[i].count('g')
+           ecounter += self.names[i].count('e')
+           mm = self.names[i].capitalize()
+           if gcounter > ecounter:
+               print("(%d) %s contains %d \"e\" and %d \"g\" and thus, a GOOD witch: " % (count, mm, ecounter, gcounter))
+           elif ecounter > gcounter:
+               print("(%d) %s contains %d \"e\" and %d \"g\" and thus, an EVIL witch: " % (count, mm, ecounter, gcounter))
+           else:
+              print("(%d) %s contains %d \"e\" and %d \"g\" and thus, a NEUTRAL witch: " % (count, mm, ecounter, gcounter))
+           ecounter = 0
+           gcounter = 0
+           count += 1
+        return self.names
+   def displayList(self):
+       n = self.getNames()
+       m = [x.capitalize() for x in n]
+       p = ', '.join(map(str, m))
+       print("NAMES: ", p)
+       print("------------------------------------------------------------------------------- ")
+
+   def displayl(self):
+     while True: # while loop will keep looping
+         Name = input("Enter Name ")
+         Name = Name.lower()
+         if Name=="done":
+           break
+
+
+obj=Witches()
+numberOfNames=int(input("enter number of names: "))
+# for x in range(numberOfNames):
+#    Name = input("Enter Name %d: "%(x+1))
+#    Name=Name.lower()   #convert each letter to lower
+#    obj.addNames(Name)
+print("============================THE REPORT========================================= ")
+# n=obj.getNames()
+# m=[x.capitalize() for x in n]
+# p=', '.join(map(str,m))
+# print("NAMES: ",p)
+# print("------------------------------------------------------------------------------- ")
+# ecounter=0
+# gcounter=0
+# count=1
+# for i in range(len(obj.getNames())):
+#     gcounter += obj.getNames()[i].count('g')
+#     ecounter += obj.getNames()[i].count('e')
+#     mm = obj.getNames()[i].capitalize()
+#     if gcounter>ecounter:
+#         print("(%d) %s contains %d \"e\" and %d \"g\" and thus, a GOOD witch: "%(count,mm,ecounter,gcounter))
+#     elif ecounter > gcounter:
+#         print("(%d) %s contains %d \"e\" and %d \"g\" and thus, an EVIL witch: " % (count,mm, ecounter, gcounter))
+#     else:
+#         print("(%d) %s contains %d \"e\" and %d \"g\" and thus, a NEUTRAL witch: " % (count,mm, ecounter, gcounter))
+#     ecounter = 0
+#     gcounter = 0
+#     count+=1
+
+
