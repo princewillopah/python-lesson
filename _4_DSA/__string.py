@@ -199,9 +199,9 @@ Slicing Syntax: sequence[start:stop:step]
     stop: The index at which the slice ends. This value is exclusive.
     step: The step size or stride. It determines how many elements to skip. 1 is default if step is not specified
 """
-###  --------
-### Example-1
-###  --------
+###  --------------------------------
+###  Example-1
+###  --------------------------------
     # s = "Hello, World!"
     # print(s[0:5])  # Output: Hello
 """
@@ -210,9 +210,9 @@ stop = 5: Stop before the 6th character (index 5).
 step: Not specified, so it defaults to 1 (every character).
 """
 
-###----------
+### ----------
 ### Example-2: Using Step - If you want every second character:
-###----------
+### ----------
     # print(s[::2])  # Output: Hlo ol!
 
 """
@@ -281,8 +281,6 @@ s[5:15]: Extracts the substring from index 5 to 14 ('fghijklmno').
 
 
 
-
-
 #  ------------------------------------------------------------------------------------------------------------------
 # Check For Palindrome In Python
 #  ------------------------------------------------------------------------------------------------------------------
@@ -307,6 +305,8 @@ Phrases (ignoring spaces and punctuation):
     No lemon, no melon
     Eva, can I see bees in a cave?
     Madam, in Eden, I'm Adam.
+
+    
 
 Numbers:
     121
@@ -586,9 +586,6 @@ s1 = "silents" and s2 = "listen"                      ------>   NotAnagram
 two string will be anagram only:
     - if they have the same length
     - if they are both sorted, they will be the same
-
-
-
 """
 
 ## method1 ##############
@@ -843,9 +840,9 @@ thus to reverse it is not create a new string
 
 
 
-#### -------------
+#### --------------------------
 #### Method 1: Using Slicing:
-#### -------------
+#### --------------------------
 
 # def reverse_string(s):
 #     return s[::-1]
@@ -856,9 +853,9 @@ thus to reverse it is not create a new string
 # print(reversed_string)  # Output: !dlroW ,olleH
 
 
-#### -------------
+#### ------------------------
 #### Method 2: Using a Loop
-#### -------------
+#### ------------------------
 
 # def reverse_string(s):
 #     reversed_str = ""
@@ -884,9 +881,9 @@ thus to reverse it is not create a new string
 # print(reversed_string)  # Output: !dlroW ,olleH
 
 
-#### -------------
+#### -------------------------------
 #### Method 4: Using Recursion
-#### -------------
+#### -------------------------------
 # def reverse_string(s):
 #     if len(s) == 0:
 #         return s
@@ -899,14 +896,67 @@ thus to reverse it is not create a new string
 # print(reversed_string)  # Output: !dlroW ,olleH
 
 
-#### -------------
+#### -------------------------------
 #### 
-#### -------------
+#### -------------------------------
 
 
-#### -------------
+#### -------------------------------
 #### 
-#### -------------
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
+#### -------------------------------
+#### 
+#### -------------------------------
+
+
 
 
 
