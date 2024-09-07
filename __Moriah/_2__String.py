@@ -111,25 +111,27 @@ print()
 
 
 
-# upper()	       Converts a string into upper case
-# capitalize()	Converts the first character to upper case
-# center()	       Returns a centered string
-# format()	       Formats specified values in a string
-# find()	       Searches the string for a specified value and returns the position of where it was found
-# index()     	Searches the string for a specified value and returns the position of where it was found
-# lower()     	Converts a string into lower case
-# replace()   	Returns a string where a specified value is replaced with a specified value
-# split()     	Splits the string at the specified separator, and returns a list
-# zfill()     	Fills the string with a specified number of 0 values at the beginning
-# expandtabs()	Sets the tab size of the string
-# join()      	Joins the elements of an iterable to the end of the string
-# count()	       Returns the number of times a specified value occurs in a string
-# casefold()	       Converts string into lower case
-# splitlines()       Splits the string at line breaks and returns a list
-# startswith()       Returns true if the string starts with the specified value
-# strip()     	Returns a trimmed version of the string
-# swapcase()  	Swaps cases, lower case becomes upper case and vice versa
-# title()     	Converts the first character of each word to upper case
+# upper()	        Converts a string into upper case
+# lower()     	    Converts a string into lower case
+# capitalize()	    Converts the first character to upper case
+# center()	        Returns a centered string
+# format()	        Formats specified values in a string
+# find()	        Searches the string for a specified value and returns the position of where it was found
+# replace()   	    Returns a string where a specified value is replaced with a specified value
+# count()	        Returns the number of times a specified value occurs in a string
+
+# index()     	    Searches the string for a specified value and returns the position of where it was found
+# split()     	    Splits the string at the specified separator, and returns a list
+# zfill()       	Fills the string with a specified number of 0 values at the beginning
+# expandtabs()	    Sets the tab size of the string
+# join()      	    Joins the elements of an iterable to the end of the string
+
+# casefold()	    Converts string into lower case
+# splitlines()      Splits the string at line breaks and returns a list
+# startswith()      Returns true if the string starts with the specified value
+# strip()     	    Returns a trimmed version of the string
+# swapcase()  	    Swaps cases, lower case becomes upper case and vice versa
+# title()     	    Converts the first character of each word to upper case
 
 
 # encode()	       Returns an encoded version of the string
@@ -161,35 +163,6 @@ print()
 
 
 
-
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
-
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
-
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
-
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
-
-
-###--------------------------------------------------
-###    
-###--------------------------------------------------
 
 
 
