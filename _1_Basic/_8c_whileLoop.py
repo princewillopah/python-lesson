@@ -17,6 +17,9 @@ With the for loop we can execute a set of statements, once for each item in a li
 list1 =  ["Kunle","Ade","Olumide",'Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul','Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary,' 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen','Robert Lewandowski', 'Lionel Messi', 'Eden Hazard', 'Cristiano Ronaldo', 'Kevin De Bruyne', 'Mohamed Salah', 'Kylian Mbappé', 'Neymar Jr.']
 list2 = [2,3,4,3,4,2,4,5,6,7,8,5,4,5,5]
 
+
+
+
 # ---------------------------------------------------------------------------------------------------------------
 # BASIC FOR
 # ---------------------------------------------------------------------------------------------------------------
@@ -82,6 +85,34 @@ print()
 # ---------------------------------------------------------------------------------------------------------------
 # 
 # ---------------------------------------------------------------------------------------------------------------
+
+# words1 = """A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+# This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+# With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc"""
+
+# list1 =  ["Kunle","Ade","Olumide",'Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul','Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary,' 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen','Robert Lewandowski', 'Lionel Messi', 'Eden Hazard', 'Cristiano Ronaldo', 'Kevin De Bruyne', 'Mohamed Salah', 'Kylian Mbappé', 'Neymar Jr.']
+# list2 = [2,3,4,3,4,2,4,5,6,7,8,5,4,5,5]
+
+
+flag = True
+count = 0
+
+while flag:
+    user_input = input("Guess who is on the list: ")
+    print()
+    if user_input in list1:
+        print(f"You got it right. {user_input} is on the list")
+        flag = False
+    else:
+        print(f"You failed. {user_input} is NOT on the list")
+
+    count = count + 1
+
+print()
+if count == 1:
+     print(f"you got it at the first try")
+else:
+     print(f"You failed. {count - 1} times before getting it right")
 
 # ---------------------------------------------------------------------------------------------------------------
 # 

@@ -57,7 +57,13 @@ print(sorted_books)
 # The lambda function takes a dictionary x as its argument and returns the publication year of the book x["year"].
 
 # =============================================================================================================================================
+## list of 30 random numbers:
 
+import random
+
+# Generate a list of 30 random numbers between 1 and 100
+random_numbers = random.sample(range(1, 101), 30)
+random_numbers
 # =============================================================================================================================================
 
 # =============================================================================================================================================

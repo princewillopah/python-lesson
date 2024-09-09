@@ -110,7 +110,6 @@ print()
 
 
 
-
 # upper()	        Converts a string into upper case
 # lower()     	    Converts a string into lower case
 # capitalize()	    Converts the first character to upper case
