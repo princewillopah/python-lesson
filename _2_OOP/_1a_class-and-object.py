@@ -71,30 +71,59 @@
 
 # class Person:
 #   pass
-# ------ex 4 ------------------
-class Circle():
-    pi=3.142
-    def __init__(self,radius=1):
-        self.radius = radius
+# ------ex 8 ------------------
+# class Circle():
+#     pi=3.142
+#     def __init__(self,radius=1):
+#         self.radius = radius
 
-    def setRadius(self,newR):
-        self.radius = newR
-    def getRadius(self):
-        return self.radius
+#     def setRadius(self,newR):
+#         self.radius = newR
+#     def getRadius(self):
+#         return self.radius
 
-    def area(self):
-        return self.radius * self.radius * Circle.pi
+#     def area(self):
+#         return self.radius * self.radius * Circle.pi
 
-myc = Circle(5)
-print("the area of radius {}, is {}".format(myc.radius,myc.area()))
+# myc = Circle(5)
+# print("the area of radius {}, is {}".format(myc.radius,myc.area()))
 
-myc.radius=10
-print("the area of radius {}, is {}".format(myc.radius,myc.area()))
-myc.setRadius(15)
-newr=myc.getRadius()
-print("the area of radius {}, is {}".format(newr,myc.area()))
+# myc.radius=10
+# print("the area of radius {}, is {}".format(myc.radius,myc.area()))
+# myc.setRadius(15)
+# newr=myc.getRadius()
+# print("the area of radius {}, is {}".format(newr,myc.area()))
 
-# ------ex 4 ------------------
+# ------ex 9 ------------------
+
+# def calculate_bmi(weight: float | int, height: float) -> float:
+#     """
+#     Calculate Body Mass Index (BMI) based on the weight and height
+
+#     :param weight: Weight of a person in kilograms (kg)
+#     :param height: Height of a person in meters (m)
+#     :return: BMI value rounded to two decimal places
+
+#     Example: 
+#     calculate_bmi(70,1.75)
+#      22.86
+#     """
+
+#     if height <= 0:
+#         raise ValueError("Height must be greater than zero.")
+    
+#     bmi = weight / (height ** 2)
+#     return round(bmi, 2)
+
+# # Example usage:
+# weight = 70  # in kilograms
+# height = 1.75  # in meters
+# bmi = calculate_bmi(weight, height)
+# print(f"Your BMI is: {bmi}")
+
+
+
+
 
 # ------ex 4 ------------------
 
