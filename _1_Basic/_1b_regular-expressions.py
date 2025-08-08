@@ -65,13 +65,13 @@ import re
 # The findall() function returns a list containing all matches.
 #-----------------------------------------------------------------
 
-# txt = "The rain in Spain"
-# x = re.findall("ai", txt)
-# print(x)
-### ANOTHER EXAMPLE
-# txt = "The rain in Spain"
-# x = re.findall("Portugal", txt)
-# print(x)
+txt = "The rain in Spain"
+x = re.findall("ai", txt)
+print(x)
+## ANOTHER EXAMPLE
+txt = "The rain in Spain"
+x = re.findall("Portugal", txt)
+print(x)
 #-----------------------------------------------------------------
 #-----------------------------------------------------------------
 
