@@ -32,7 +32,7 @@ print()
 
 
 ### ========================================================================================
-### 
+### Empty Tuple: For when you need a placeholder.
 ### ========================================================================================
 
 
@@ -41,10 +41,27 @@ print()
 ### --------------------------------------
 ### 
 ### --------------------------------------
+### Empty Tuple: For when you need a placeholder.
+### --------------------------------------
 """
 
 """
 
+# empty_tuple = ()  # Or tuple() for clarity in production code
+# print(empty_tuple)  # Output: ()
+
+
+
+### --------------------------------------
+### Single-Element Tuple:
+### --------------------------------------
+
+"""
+Note the trailing comma—it's required to distinguish from just parentheses.
+
+"""
+# single_item = (42,)  # Without comma, it's just an int in parentheses
+# print(single_item)  # Output: (42,)
 
 
 
@@ -52,25 +69,13 @@ print()
 
 
 ### --------------------------------------
-### 
+### Multi-Element Tuple:
 ### --------------------------------------
 """
 
 """
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
+# fruits = ("apple", "banana", "cherry")
+# print(fruits)  # Output: ('apple', 'banana', 'cherry')
 
 
 
@@ -78,12 +83,13 @@ print()
 
 
 ### --------------------------------------
-### 
+### Convert From Other Iterables: Use the tuple() constructor for flexibility
 ### --------------------------------------
 """
 
 """
-
+# list_to_tuple = tuple([1, 2, 3])  # Converts list to tuple
+# print(list_to_tuple)  # Output: (1, 2, 3)
 
 
 
