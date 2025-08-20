@@ -95,6 +95,7 @@ Note the trailing comma—it's required to distinguish from just parentheses.
 
 
 
+print(tuple([1,2,3,4,5]))
 
 ### --------------------------------------
 ### 

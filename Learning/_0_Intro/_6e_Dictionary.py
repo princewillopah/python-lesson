@@ -10,51 +10,10 @@ print()
 
 
 
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary' 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-### Basic for loop:
-# for name in female_names:
-#     print(name.capitalize())
-
-#### Enumerate for index + value:
-# for index, name in enumerate(female_names):
-#     print(f"{index+1}: {name}")
-
-
-### While loop (less common for lists, but useful for dynamic changes):
-# i = 0
-# while i < len(female_names):
-#     print(f"{i+1}: {female_names[i]}")
-#     i += 1
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# for name in female_names:
-#     if ("s" in name) or ("S" in name):
-        
 
 
 
@@ -75,166 +34,146 @@ print()
 ### ========================================================================================
 ### 
 ### ========================================================================================
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary', 'Barbara', 'Linda', 'Susan', 'patricia', 'Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans', 'paul', 'Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-# all_gender_names = []
-# def clean_duplicate_names(names):
-#     names = [name.lower().capitalize() for name in names] # make sure all names are in the same case
-#     return list(set(names)) # return list(set(names))  # This will remove duplicates but not preserve order
-
-# def mix_names(cleaned_females, cleaned_males):
-#     return sorted(cleaned_females+cleaned_males)  # This will sort the names in alphabetical order
 
 
 
-
-# print(f"All Females Names: {female_names}")
-# print(f"Cleaned Females Names: {clean_duplicate_names(female_names)}")
-# print(f"All Males Names: {male_names}")
-# print(f"Clean Male Names: {clean_duplicate_names(male_names)}")
-# print(f"Mixed Names: {mix_names(clean_duplicate_names(female_names), clean_duplicate_names(male_names))}")
 
 ### --------------------------------------
-### 
+### Empty Dictionary
+### --------------------------------------
+"""
+
+"""
+# empty_dict = {}
+# print("Empty Dictionary:")
+# print(empty_dict)
+# print()
+### --------------------------------------
+### Dictionary with Some Initial Values
+### --------------------------------------
+"""
+
+"""
+# initial_dict = {
+#     "name": "John Doe",
+#     "age": 30,
+#     "email": "john.doe@example.com"
+# }
+# print("Dictionary with Some Initial Values:")
+# print(initial_dict)
+
+
+
+
+
+
+### -------------------------------------
+### Dictionary with Some Initial Values
 ### --------------------------------------
 """
 
 """
 
+# initial_dict = {
+#     "name": "John Doe",
+#     "age": 30,
+#     "email": "john.doe@example.com"
+# }
+# ### Accessing Dictionary Values
+# print("Accessing Dictionary Values:")
+# print("Name:", initial_dict["name"])
+# print("Age:", initial_dict["age"])
+# print(f"Email: {initial_dict['email']}")
 
+# # ### Modifying a Value
+# initial_dict["age"] = 31
+# print("Updated Dictionary after modifying 'age':")
+# print(initial_dict)
 
+# #### Adding a New Key-Value Pair
 
+# initial_dict["location"] = "New York"
+# print("Updated Dictionary:")
+# print(initial_dict)
 
+#### Removing a Key-Value Pair  
 
+# del initial_dict["age"]
+# deleted_item = initial_dict.pop("email") # Removes and returns value, else KeyError
+# deleted_last_item = initial_dict.popitem() # Removes and returns last inserted item (as tuple)
+# print("Updated Dictionary after removing 'age':")
+# print(initial_dict) # {'name': 'John Doe'}
+# print("Deleted Item:", deleted_item) # Deleted Item: john.doe@example.com
+# print("Deleted Last Item:", deleted_last_item) # Deleted Last Item: ('location', 'New York')
 
-### --------------------------------------
-### List comprehension example
-### --------------------------------------
-"""
-
-"""
-# # Basic: 
-# n1 = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
-# # With condition:
-# n2 = [x**2 for x in range(5) if x % 2 == 0]# [0, 4, 16]
-# print(f"List comprehension examples: {n1}, {n2}")
-
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary', 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-# cleaned_female_names = [name.lower().capitalize() for name in female_names]
-# cleaned_female_names = list(set(cleaned_female_names))
-
-# print(f"All female names: {female_names}")
-# print(f"Clean female names: {cleaned_female_names}")
-
-
-
-### --------------------------------------
-### Advanced example: Data filtering (e.g., for a simple analytics tool).
-### --------------------------------------
-"""
-
-"""# Production-ready: Use comprehensions for efficiency on large datasets
-# user_data = [
-#     {"name": "Alice", "age": 28, "score": 85},
-#     {"name": "Bob", "age": 35, "score": 92},
-#     {"name": "Charlie", "age": 22, "score": 78},
-#     {"name": "David", "age": 31, "score": 88},
-#     {"name": "Eve", "age": 29, "score": 95},
-#     {"name": "Frank", "age": 42, "score": 76},
-#     {"name": "Grace", "age": 25, "score": 89},
-#     {"name": "Heidi", "age": 30, "score": 91},
-#     {"name": "Ivan", "age": 27, "score": 83},
-#     {"name": "Judy", "age": 38, "score": 79},
-#     {"name": "Kevin", "age": 24, "score": 94},
-#     {"name": "Laura", "age": 33, "score": 87},
-#     {"name": "Mike", "age": 26, "score": 80},
-#     {"name": "Nora", "age": 39, "score": 93},
-#     {"name": "Oscar", "age": 34, "score": 81},
-#     {"name": "Pam", "age": 23, "score": 90},
-#     {"name": "Quincy", "age": 45, "score": 75},
-#     {"name": "Rachel", "age": 32, "score": 86},
-#     {"name": "Steve", "age": 21, "score": 84},
-#     {"name": "Tina", "age": 40, "score": 96},
-#     {"name": "Ursula", "age": 28, "score": 77},
-#     {"name": "Victor", "age": 37, "score": 82},
-#     {"name": "Wendy", "age": 41, "score": 98}
-# ]
-# user_data_above_30 = [user["name"] for user in user_data if user["age"] > 30]  # Filter users older than 30
-# print(user_data_above_30)  # [{'name': 'Bob', 'age': 35, 'score': 92}]
-
-
-# high_scorers = [user["name"] for user in user_data if user["score"] > 90]
-# print(high_scorers)  # ['Alice', 'Bob']
-
-
-
-
-    
-
-
+# generate a dictionary of 20 fruits with values eg {"apple": 4}
 
 
 
 ### --------------------------------------
-### Another complex case: Zipping lists (combine multiple).
+
 ### --------------------------------------
 """
 
 """
+# fruits_dict = {
+#     "apple": 4,
+#     "banana": 7,
+#     "orange": 5,
+#     "grape": 12,
+#     "mango": 3,
+#     "pear": 6,
+#     "pineapple": 2,
+#     "kiwi": 8,
+#     "peach": 9,
+#     "plum": 4,
+#     "cherry": 15,
+#     "watermelon": 1,
+#     "papaya": 2,
+#     "blueberry": 20,
+#     "strawberry": 18,
+#     "raspberry": 13,
+#     "blackberry": 11,
+#     "coconut": 2,
+#     "lemon": 10,
+#     "lime": 7
+# }
 
-# names = ["Alice", "Bob"]
-# ages = [28, 35]
-# zipped = list(zip(names, ages))  # [('Alice', 28), ('Bob', 35)]
+# print("Dictionary of 20 fruits with quantities:")
+# # # Keys only
+# for fruit in fruits_dict:
+#     print(fruit)
+#     # print(f"{fruit}: {fruits_dict[fruit]}")
 
-# print("Zipped names and ages:", zipped)
+# print()
 
-# # Unzipping
-# unzipped_names, unzipped_ages = zip(*zipped)
-# print("Unzipped names:", unzipped_names)  # ('Alice', 'Bob')
-# print("Unzipped ages:", unzipped_ages)    # (28, 35)
-# print("Unzipped names and ages:", list(zip(unzipped_names, unzipped_ages)))  # [('Alice', 28), ('Bob', 35)]
+# # Values only
+# for quantity in fruits_dict.values():
+#     print(quantity)
+
+# print()
+
+# # Key-Value pairs
+# for fruit, quantity in fruits_dict.items():
+#     print(f"{fruit}: {quantity}")
+
+# print()
+
+# # Key-Value pairs
+# for item in fruits_dict.items():
+#     print(f"{item[0]}: {item[1]}")
+
+# print()
+
+# # Key-Value pairs
+# for item in fruits_dict.items():
+#     print(f"{item[0]}: {item[1]}")
+
+# print()
 
 
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-# ### METHOD ONE
-
-
-# for item in my_list:
-#     if item not in unique_list_ordered:
-#         unique_list_ordered.append(item)
-
-# print(unique_list_ordered) # Output: [1, 2, 3, 4, 5]
-# -------------------------------------
-# my_list = [1, 2, 2, 3, 4, 4, 5]
-
-# # ### METHOD 1
-# unique_list_ordered1 = []
-# print([item for item in my_list if item not in unique_list_ordered1 and not unique_list_ordered1.append(item)])
-
-# # ### METHOD 2
-# unique_list_ordered2 = []
-# for item in my_list:
-#     if item not in unique_list_ordered2:
-#         unique_list_ordered2.append(item)
-# print(unique_list_ordered2) # Output: [1, 2, 3, 4, 5]
-
-# # ### METHOD 3
-# print(list(set(my_list)))
-
-# # ### METHOD 4
-# print(list(dict.fromkeys(my_list)))
-# ----------------------------
-
+# for fruit in fruits_dict:
+#     print(f"{fruit}: {fruits_dict[fruit]}")
 
 
 ### --------------------------------------
@@ -243,9 +182,109 @@ print()
 """
 
 """
+# person = {
+#     "name": "John Doe",
+#     "age": 34,
+#     "gender": "Male",
+#     "email": "john.doe@example.com",
+#     "phone": "+1234567890",
+#     "address": "123 Main St, Springfield",
+#     "city": "Springfield",
+#     "state": "Illinois",
+#     "country": "USA",
+#     "postal_code": "62704",
+#     "nationality": "American",
+#     "marital_status": "Single",
+#     "occupation": "Software Engineer",
+#     "company": "Tech Solutions Inc.",
+#     "skills": ["Python", "JavaScript", "SQL", "Docker"],
+#     "languages": ["English", "Spanish"],
+#     "date_of_birth": "1991-05-15",
+#     "height_cm": 180,
+#     "weight_kg": 75,
+#     "blood_type": "O+",
+#     "hobbies": ["Reading", "Cycling", "Traveling"]
+# }
+
+# # print(person)
+# # print()
+
+# print("Person dictionary:")
+# for key, value in person.items():
+#     print(f"{key}: {value}")
+
+
+# 
 
 
 
+### --------------------------------------
+### 
+### --------------------------------------
+"""
+
+"""
+inventory = {
+    "apples": 10,
+    "bananas": 5,
+    "oranges": 8,
+    "grapes": 0,
+    "mangoes": 3
+}
+
+# 0. Print final inventory
+print("Final inventory:")
+for fruit, quantity in inventory.items():
+    print(f"{fruit}: {quantity}")
+
+print()
+
+# 1. Check if a key exists
+if "apples" in inventory:
+    print("We have apples!")
+
+# 2. Check if a key does not exist
+if "pears" not in inventory:
+    print("No pears in inventory.")
+
+# 3. Get value with default if key is missing
+apples_count = inventory.get("apples", 0)
+print(f"Number of apples: {apples_count}")
+
+pears_count = inventory.get("pears", 0)
+print(f"Number of pears: {pears_count}")
+
+# 4. Add a new item if not present
+if "pears" not in inventory:
+    inventory["pears"] = 7
+    print("Added pears to inventory.")
+
+# 5. Remove an item if present
+if "grapes" in inventory:
+    del inventory["grapes"]
+    print("Removed grapes from inventory.")
+
+# 6. Update value if key exists
+if "bananas" in inventory:
+    inventory["bananas"] += 2
+    print(f"Updated bananas count: {inventory['bananas']}")
+
+# 7. Loop through keys and check existence
+for fruit in ["apples", "pears", "kiwi"]:
+    if fruit in inventory:
+        print(f"{fruit} is in inventory.")
+    else:
+        print(f"{fruit} is NOT in inventory.")
+
+# 8. Using try/except for key access
+try:
+    print(f"Oranges: {inventory['oranges']}")
+except KeyError:
+    print("Oranges not found in inventory.")
+
+# 9. Using setdefault to ensure a key exists
+inventory.setdefault("kiwi", 0)
+print(f"Kiwi count: {inventory['kiwi']}")
 
 
 

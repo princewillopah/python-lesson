@@ -7,65 +7,10 @@ print()
 print()
 
 
-
-
-
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary' 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-### Basic for loop:
-# for name in female_names:
-#     print(name.capitalize())
-
-#### Enumerate for index + value:
-# for index, name in enumerate(female_names):
-#     print(f"{index+1}: {name}")
-
-
-### While loop (less common for lists, but useful for dynamic changes):
-# i = 0
-# while i < len(female_names):
-#     print(f"{i+1}: {female_names[i]}")
-#     i += 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# for name in female_names:
-#     if ("s" in name) or ("S" in name):
-        
-
-
-
-
-
-
-
-
-
-
-
+"""
+Sets are super useful for handling unique items without duplicates. 
+They're like lists or dictionaries but unordered, mutable (changeable), and they automatically enforce uniqueness.
+"""
 
 
 
@@ -75,25 +20,100 @@ print()
 ### ========================================================================================
 ### 
 ### ========================================================================================
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary', 'Barbara', 'Linda', 'Susan', 'patricia', 'Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans', 'paul', 'Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-# all_gender_names = []
-# def clean_duplicate_names(names):
-#     names = [name.lower().capitalize() for name in names] # make sure all names are in the same case
-#     return list(set(names)) # return list(set(names))  # This will remove duplicates but not preserve order
-
-# def mix_names(cleaned_females, cleaned_males):
-#     return sorted(cleaned_females+cleaned_males)  # This will sort the names in alphabetical order
 
 
 
 
-# print(f"All Females Names: {female_names}")
-# print(f"Cleaned Females Names: {clean_duplicate_names(female_names)}")
-# print(f"All Males Names: {male_names}")
-# print(f"Clean Male Names: {clean_duplicate_names(male_names)}")
-# print(f"Mixed Names: {mix_names(clean_duplicate_names(female_names), clean_duplicate_names(male_names))}")
+### --------------------------------------
+### Basics: Creating and Accessing Sets
+### --------------------------------------
+"""
+
+"""
+# # Empty set (note: {} creates an empty dict, so use set() for empty sets)
+# empty_set = set()
+# print(empty_set)  # Output: set()
+
+
+
+
+
+
+### --------------------------------------
+### 
+### --------------------------------------
+"""
+
+"""
+
+# # Set with elements
+# fruits = {'apple', 'banana', 'cherry'}
+# numbers = set([1, 2, 3, 3])  # Duplicates are auto-removed, so {1, 2, 3}
+
+# print(fruits)  # Output: {'apple', 'banana', 'cherry'} (order may vary)
+# print(numbers)  # Output: {1, 2, 3}
+
+### --------------------------------------
+### 
+### --------------------------------------
+"""
+
+"""
+# fruits = {'apple', 'banana', 'cherry', 'apple', 'banana', 'cherry', 'mango', 'grape'}
+# for fruit in fruits:
+#     print(fruit)  # Iterates over elements
+#     if fruit == 'banana':
+#         print("Found a banana!")
+
+# fruits.add('orange')  # Adding an element
+# print(fruits)  # Output: {'apple', 'banana', 'cherry', 'mango', 'grape', 'orange'}
+
+
+
+
+
+### --------------------------------------
+### Get duplicates from a list
+### --------------------------------------
+"""
+
+"""
+
+female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth', 'Mary','mary', 'Barbara', 'Susan','Jessica', 
+                'sarah', 'Karen', "Alice",'Karen',"Anna", "Alice", "agatha", "Amanda", "anbolyn","Bridget",
+                "Moriah","Bolu", 'Patricia', 'mary', 'serah', 'queen', 'Jessica', 'Rita', 'mauree', 'Adnma', 
+                'Grace', 'Amama', 'Grace', 'grace', 'judith', 'bridget', 'Akudo','Maltida', 'jessica']
+
+
+# def get_duplicates(input_list):
+#     all_names_capitalized = [name.lower().capitalize() for name in input_list]
+#     duplicates = set()
+#     unduplicates = set()
+#     for item in all_names_capitalized:
+#         if item in unduplicates:
+#             duplicates.add(item)
+#         else:
+#             unduplicates.add(item)
+#     return list(duplicates)
+
+
+# def info():
+#     print(f"Total names: {len(female_names)}")
+#     print(f"Unique names: {len(set(female_names))}")
+#     print(f"numbers Of Duplicate names Removed: {len(female_names) - len(set(female_names))}")
+
+# def cleanList(list_of_names):
+#     list_of_names = [name.lower().capitalize() for name in list_of_names]  # convert all names to lowercase and then making all names to be capitalized -  resulting: 'mArY' or 'mary' to 'Mary'
+#     return list(set(list_of_names))  # remove duplicates
+
+# print(f"Original List: {female_names}")
+# print()
+# print(f"Clean List: {cleanList(female_names)}")
+# print()
+# info() # caling the info function
+# print(f"Duplicate Names: {get_duplicates(female_names)}")
+
+
 
 ### --------------------------------------
 ### 
@@ -105,135 +125,6 @@ print()
 
 
 
-
-
-
-### --------------------------------------
-### List comprehension example
-### --------------------------------------
-"""
-
-"""
-# # Basic: 
-# n1 = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
-# # With condition:
-# n2 = [x**2 for x in range(5) if x % 2 == 0]# [0, 4, 16]
-# print(f"List comprehension examples: {n1}, {n2}")
-
-# female_names = ['Mary', 'Jennifer', 'Linda', 'Patricia', 'Elizabeth','Mary', 'Barbara', 'Susan','Jessica', 'Sarah', 'Karen', "Alice",'Karen']
-# male_names = ['Adam', 'Joseph', 'Leo', 'Peter', 'Evans','Mathew', 'Banabas', 'Smart','Joe', 'Smith', 'Ken', "Apolo",'Paul']
-
-# cleaned_female_names = [name.lower().capitalize() for name in female_names]
-# cleaned_female_names = list(set(cleaned_female_names))
-
-# print(f"All female names: {female_names}")
-# print(f"Clean female names: {cleaned_female_names}")
-
-
-
-### --------------------------------------
-### Advanced example: Data filtering (e.g., for a simple analytics tool).
-### --------------------------------------
-"""
-
-"""# Production-ready: Use comprehensions for efficiency on large datasets
-# user_data = [
-#     {"name": "Alice", "age": 28, "score": 85},
-#     {"name": "Bob", "age": 35, "score": 92},
-#     {"name": "Charlie", "age": 22, "score": 78},
-#     {"name": "David", "age": 31, "score": 88},
-#     {"name": "Eve", "age": 29, "score": 95},
-#     {"name": "Frank", "age": 42, "score": 76},
-#     {"name": "Grace", "age": 25, "score": 89},
-#     {"name": "Heidi", "age": 30, "score": 91},
-#     {"name": "Ivan", "age": 27, "score": 83},
-#     {"name": "Judy", "age": 38, "score": 79},
-#     {"name": "Kevin", "age": 24, "score": 94},
-#     {"name": "Laura", "age": 33, "score": 87},
-#     {"name": "Mike", "age": 26, "score": 80},
-#     {"name": "Nora", "age": 39, "score": 93},
-#     {"name": "Oscar", "age": 34, "score": 81},
-#     {"name": "Pam", "age": 23, "score": 90},
-#     {"name": "Quincy", "age": 45, "score": 75},
-#     {"name": "Rachel", "age": 32, "score": 86},
-#     {"name": "Steve", "age": 21, "score": 84},
-#     {"name": "Tina", "age": 40, "score": 96},
-#     {"name": "Ursula", "age": 28, "score": 77},
-#     {"name": "Victor", "age": 37, "score": 82},
-#     {"name": "Wendy", "age": 41, "score": 98}
-# ]
-# user_data_above_30 = [user["name"] for user in user_data if user["age"] > 30]  # Filter users older than 30
-# print(user_data_above_30)  # [{'name': 'Bob', 'age': 35, 'score': 92}]
-
-
-# high_scorers = [user["name"] for user in user_data if user["score"] > 90]
-# print(high_scorers)  # ['Alice', 'Bob']
-
-
-
-
-    
-
-
-
-
-
-### --------------------------------------
-### Another complex case: Zipping lists (combine multiple).
-### --------------------------------------
-"""
-
-"""
-
-# names = ["Alice", "Bob"]
-# ages = [28, 35]
-# zipped = list(zip(names, ages))  # [('Alice', 28), ('Bob', 35)]
-
-# print("Zipped names and ages:", zipped)
-
-# # Unzipping
-# unzipped_names, unzipped_ages = zip(*zipped)
-# print("Unzipped names:", unzipped_names)  # ('Alice', 'Bob')
-# print("Unzipped ages:", unzipped_ages)    # (28, 35)
-# print("Unzipped names and ages:", list(zip(unzipped_names, unzipped_ages)))  # [('Alice', 28), ('Bob', 35)]
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-# ### METHOD ONE
-
-
-# for item in my_list:
-#     if item not in unique_list_ordered:
-#         unique_list_ordered.append(item)
-
-# print(unique_list_ordered) # Output: [1, 2, 3, 4, 5]
-# -------------------------------------
-# my_list = [1, 2, 2, 3, 4, 4, 5]
-
-# # ### METHOD 1
-# unique_list_ordered1 = []
-# print([item for item in my_list if item not in unique_list_ordered1 and not unique_list_ordered1.append(item)])
-
-# # ### METHOD 2
-# unique_list_ordered2 = []
-# for item in my_list:
-#     if item not in unique_list_ordered2:
-#         unique_list_ordered2.append(item)
-# print(unique_list_ordered2) # Output: [1, 2, 3, 4, 5]
-
-# # ### METHOD 3
-# print(list(set(my_list)))
-
-# # ### METHOD 4
-# print(list(dict.fromkeys(my_list)))
-# ----------------------------
 
 
 
