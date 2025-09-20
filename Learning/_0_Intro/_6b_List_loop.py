@@ -29,8 +29,16 @@ print()
 #     i += 1
 
 
+# names = ['John Doe', 'Jane Smith', 'Jack Brown', 'Janet Doe', 'Joseph Drakula', 'Jim Paul', 'Johnathan Davis', 'Joe Lamp']
+# name = ''
+# while name != 'your name':
+#     print('Please type your name.')
+#     name = input('>')
+#     if name in names:
+#         print(f"Hello {name}!")
+    
 
-
+# print('Thank you!')
 
 
 

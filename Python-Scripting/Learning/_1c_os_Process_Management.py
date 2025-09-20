@@ -1,4 +1,8 @@
 import os
+import signal
+import time
+
+
 os.system('clear')
 print("----------------------------------------------------------------------------------------")
 print(" RESULTS")
@@ -24,190 +28,59 @@ print()
 
 
 
+
+
+
+
+
+
+
 ### ========================================================================================
-### 
+### Run a system command in a subshell
 ### ========================================================================================
 
 
 
 
 ### --------------------------------------
-### Empty Dictionary
+### Run a system command in a subshell - here you can execute bash commands
 ### --------------------------------------
 """
 
 """
-# empty_dict = {}
-# print("Empty Dictionary:")
-# print(empty_dict)
+
+# print("Exit code:", os.system("echo Hello from system command"))
+# print("Exit code:", os.system("ls -l ."))
+# print("Exit code:", os.system("sleep 3; echo Slept for 3 seconds"))
+# cwd = os.getcwd()
+# print("Current working directory:", cwd)
 # print()
-### --------------------------------------
-### Dictionary with Some Initial Values
-### --------------------------------------
-"""
-
-"""
-# initial_dict = {
-#     "name": "John Doe",
-#     "age": 30,
-#     "email": "john.doe@example.com"
-# }
-# print("Dictionary with Some Initial Values:")
-# print(initial_dict)
-
-
-
-
-
-
-### -------------------------------------
-### Dictionary with Some Initial Values
-### --------------------------------------
-"""
-
-"""
-
-# initial_dict = {
-#     "name": "John Doe",
-#     "age": 30,
-#     "email": "john.doe@example.com"
-# }
-# ### Accessing Dictionary Values
-# print("Accessing Dictionary Values:")
-# print("Name:", initial_dict["name"])
-# print("Age:", initial_dict["age"])
-# print(f"Email: {initial_dict['email']}")
-
-# # ### Modifying a Value
-# initial_dict["age"] = 31
-# print("Updated Dictionary after modifying 'age':")
-# print(initial_dict)
-
-# #### Adding a New Key-Value Pair
-
-# initial_dict["location"] = "New York"
-# print("Updated Dictionary:")
-# print(initial_dict)
-
-#### Removing a Key-Value Pair  
-
-# del initial_dict["age"]
-# deleted_item = initial_dict.pop("email") # Removes and returns value, else KeyError
-# deleted_last_item = initial_dict.popitem() # Removes and returns last inserted item (as tuple)
-# print("Updated Dictionary after removing 'age':")
-# print(initial_dict) # {'name': 'John Doe'}
-# print("Deleted Item:", deleted_item) # Deleted Item: john.doe@example.com
-# print("Deleted Last Item:", deleted_last_item) # Deleted Last Item: ('location', 'New York')
-
-# generate a dictionary of 20 fruits with values eg {"apple": 4}
-
-
-
-### --------------------------------------
-
-### --------------------------------------
-"""
-
-"""
-# fruits_dict = {
-#     "apple": 4,
-#     "banana": 7,
-#     "orange": 5,
-#     "grape": 12,
-#     "mango": 3,
-#     "pear": 6,
-#     "pineapple": 2,
-#     "kiwi": 8,
-#     "peach": 9,
-#     "plum": 4,
-#     "cherry": 15,
-#     "watermelon": 1,
-#     "papaya": 2,
-#     "blueberry": 20,
-#     "strawberry": 18,
-#     "raspberry": 13,
-#     "blackberry": 11,
-#     "coconut": 2,
-#     "lemon": 10,
-#     "lime": 7
-# }
-
-# print("Dictionary of 20 fruits with quantities:")
-# # # Keys only
-# for fruit in fruits_dict:
-#     print(fruit)
-#     # print(f"{fruit}: {fruits_dict[fruit]}")
-
+# print("Exit code:", os.system("ls -la"))
 # print()
+# print("Exit code:", os.system("ls"))
 
-# # Values only
-# for quantity in fruits_dict.values():
-#     print(quantity)
-
-# print()
-
-# # Key-Value pairs
-# for fruit, quantity in fruits_dict.items():
-#     print(f"{fruit}: {quantity}")
-
-# print()
-
-# # Key-Value pairs
-# for item in fruits_dict.items():
-#     print(f"{item[0]}: {item[1]}")
-
-# print()
-
-# # Key-Value pairs
-# for item in fruits_dict.items():
-#     print(f"{item[0]}: {item[1]}")
-
-# print()
-
-
-# for fruit in fruits_dict:
-#     print(f"{fruit}: {fruits_dict[fruit]}")
 
 
 ### --------------------------------------
-### 
+### os.exec*() family (e.g., os.execvp)
 ### --------------------------------------
 """
+# Replace current process with "ls -l" command
+# ⚠️ After execvp, your Python process is gone!
+# Run separately to test.
 
 """
-# person = {
-#     "name": "John Doe",
-#     "age": 34,
-#     "gender": "Male",
-#     "email": "john.doe@example.com",
-#     "phone": "+1234567890",
-#     "address": "123 Main St, Springfield",
-#     "city": "Springfield",
-#     "state": "Illinois",
-#     "country": "USA",
-#     "postal_code": "62704",
-#     "nationality": "American",
-#     "marital_status": "Single",
-#     "occupation": "Software Engineer",
-#     "company": "Tech Solutions Inc.",
-#     "skills": ["Python", "JavaScript", "SQL", "Docker"],
-#     "languages": ["English", "Spanish"],
-#     "date_of_birth": "1991-05-15",
-#     "height_cm": 180,
-#     "weight_kg": 75,
-#     "blood_type": "O+",
-#     "hobbies": ["Reading", "Cycling", "Traveling"]
-# }
 
-# # print(person)
-# # print()
+# os.execvp("ls", ["ls", "-l"])
 
-# print("Person dictionary:")
-# for key, value in person.items():
-#     print(f"{key}: {value}")
+"""
+# ✅ Behavior:
+    # The Python script is replaced by ls -l.
+    # No return to Python; process is taken over.
+    # Used when you want to completely replace the running program with another.
 
+"""
 
-# 
 
 
 
@@ -217,67 +90,48 @@ print()
 """
 
 """
-# inventory = {
-#     "apples": 10,
-#     "bananas": 5,
-#     "oranges": 8,
-#     "grapes": 0,
-#     "mangoes": 3
-# }
 
-# # 0. Print final inventory
-# print("Final inventory:")
-# for fruit, quantity in inventory.items():
-#     print(f"{fruit}: {quantity}")
 
-# print()
 
-# # 1. Check if a key exists
-# if "apples" in inventory:
-#     print("We have apples!")
 
-# # 2. Check if a key does not exist
-# if "pears" not in inventory:
-#     print("No pears in inventory.")
 
-# # 3. Get value with default if key is missing
-# apples_count = inventory.get("apples", 0)
-# print(f"Number of apples: {apples_count}")
 
-# pears_count = inventory.get("pears", 0)
-# print(f"Number of pears: {pears_count}")
 
-# # 4. Add a new item if not present
-# if "pears" not in inventory:
-#     inventory["pears"] = 7
-#     print("Added pears to inventory.")
+### --------------------------------------
+### 
+### --------------------------------------
+"""
 
-# # 5. Remove an item if present
-# if "grapes" in inventory:
-#     del inventory["grapes"]
-#     print("Removed grapes from inventory.")
+"""
 
-# # 6. Update value if key exists
-# if "bananas" in inventory:
-#     inventory["bananas"] += 2
-#     print(f"Updated bananas count: {inventory['bananas']}")
 
-# # 7. Loop through keys and check existence
-# for fruit in ["apples", "pears", "kiwi"]:
-#     if fruit in inventory:
-#         print(f"{fruit} is in inventory.")
-#     else:
-#         print(f"{fruit} is NOT in inventory.")
 
-# # 8. Using try/except for key access
-# try:
-#     print(f"Oranges: {inventory['oranges']}")
-# except KeyError:
-#     print("Oranges not found in inventory.")
 
-# # 9. Using setdefault to ensure a key exists
-# inventory.setdefault("kiwi", 0)
-# print(f"Kiwi count: {inventory['kiwi']}")
+
+
+
+### --------------------------------------
+### 
+### --------------------------------------
+"""
+
+"""
+
+
+
+
+
+
+
+### --------------------------------------
+### 
+### --------------------------------------
+"""
+
+"""
+
+
+
 
 
 

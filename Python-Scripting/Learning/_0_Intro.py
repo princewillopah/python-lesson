@@ -24,260 +24,114 @@ print()
 
 
 
+
+
+
+
+
+
+
 ### ========================================================================================
-### 
+### Standard Library (built-in, no install needed)
 ### ========================================================================================
 
 
 
 
 ### --------------------------------------
-### Empty Dictionary
-### --------------------------------------
-"""
-
-"""
-# empty_dict = {}
-# print("Empty Dictionary:")
-# print(empty_dict)
-# print()
-### --------------------------------------
-### Dictionary with Some Initial Values
-### --------------------------------------
-"""
-
-"""
-# initial_dict = {
-#     "name": "John Doe",
-#     "age": 30,
-#     "email": "john.doe@example.com"
-# }
-# print("Dictionary with Some Initial Values:")
-# print(initial_dict)
-
-
-
-
-
-
-### -------------------------------------
-### Dictionary with Some Initial Values
+### System interaction
 ### --------------------------------------
 """
 
 """
 
-# initial_dict = {
-#     "name": "John Doe",
-#     "age": 30,
-#     "email": "john.doe@example.com"
-# }
-# ### Accessing Dictionary Values
-# print("Accessing Dictionary Values:")
-# print("Name:", initial_dict["name"])
-# print("Age:", initial_dict["age"])
-# print(f"Email: {initial_dict['email']}")
 
-# # ### Modifying a Value
-# initial_dict["age"] = 31
-# print("Updated Dictionary after modifying 'age':")
-# print(initial_dict)
 
-# #### Adding a New Key-Value Pair
 
-# initial_dict["location"] = "New York"
-# print("Updated Dictionary:")
-# print(initial_dict)
-
-#### Removing a Key-Value Pair  
-
-# del initial_dict["age"]
-# deleted_item = initial_dict.pop("email") # Removes and returns value, else KeyError
-# deleted_last_item = initial_dict.popitem() # Removes and returns last inserted item (as tuple)
-# print("Updated Dictionary after removing 'age':")
-# print(initial_dict) # {'name': 'John Doe'}
-# print("Deleted Item:", deleted_item) # Deleted Item: john.doe@example.com
-# print("Deleted Last Item:", deleted_last_item) # Deleted Last Item: ('location', 'New York')
-
-# generate a dictionary of 20 fruits with values eg {"apple": 4}
 
 
 
 ### --------------------------------------
-
+### System interaction
 ### --------------------------------------
 """
 
 """
-# fruits_dict = {
-#     "apple": 4,
-#     "banana": 7,
-#     "orange": 5,
-#     "grape": 12,
-#     "mango": 3,
-#     "pear": 6,
-#     "pineapple": 2,
-#     "kiwi": 8,
-#     "peach": 9,
-#     "plum": 4,
-#     "cherry": 15,
-#     "watermelon": 1,
-#     "papaya": 2,
-#     "blueberry": 20,
-#     "strawberry": 18,
-#     "raspberry": 13,
-#     "blackberry": 11,
-#     "coconut": 2,
-#     "lemon": 10,
-#     "lime": 7
-# }
-
-# print("Dictionary of 20 fruits with quantities:")
-# # # Keys only
-# for fruit in fruits_dict:
-#     print(fruit)
-#     # print(f"{fruit}: {fruits_dict[fruit]}")
-
-# print()
-
-# # Values only
-# for quantity in fruits_dict.values():
-#     print(quantity)
-
-# print()
-
-# # Key-Value pairs
-# for fruit, quantity in fruits_dict.items():
-#     print(f"{fruit}: {quantity}")
-
-# print()
-
-# # Key-Value pairs
-# for item in fruits_dict.items():
-#     print(f"{item[0]}: {item[1]}")
-
-# print()
-
-# # Key-Value pairs
-# for item in fruits_dict.items():
-#     print(f"{item[0]}: {item[1]}")
-
-# print()
+import os          # file, dirs, env vars
+import sys         # args, exit codes, paths
+import subprocess  # run shell commands
+import shutil      # copy, move, remove files/dirs
+import pathlib     # modern path handling
+import stat        # file permissions
+import tempfile    # temp files/dirs
 
 
-# for fruit in fruits_dict:
-#     print(f"{fruit}: {fruits_dict[fruit]}")
 
 
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-# person = {
-#     "name": "John Doe",
-#     "age": 34,
-#     "gender": "Male",
-#     "email": "john.doe@example.com",
-#     "phone": "+1234567890",
-#     "address": "123 Main St, Springfield",
-#     "city": "Springfield",
-#     "state": "Illinois",
-#     "country": "USA",
-#     "postal_code": "62704",
-#     "nationality": "American",
-#     "marital_status": "Single",
-#     "occupation": "Software Engineer",
-#     "company": "Tech Solutions Inc.",
-#     "skills": ["Python", "JavaScript", "SQL", "Docker"],
-#     "languages": ["English", "Spanish"],
-#     "date_of_birth": "1991-05-15",
-#     "height_cm": 180,
-#     "weight_kg": 75,
-#     "blood_type": "O+",
-#     "hobbies": ["Reading", "Cycling", "Traveling"]
-# }
-
-# # print(person)
-# # print()
-
-# print("Person dictionary:")
-# for key, value in person.items():
-#     print(f"{key}: {value}")
-
-
-# 
 
 
 
 ### --------------------------------------
-### 
+### Data handling
 ### --------------------------------------
 """
 
 """
-# inventory = {
-#     "apples": 10,
-#     "bananas": 5,
-#     "oranges": 8,
-#     "grapes": 0,
-#     "mangoes": 3
-# }
+import json        # JSON configs, APIs
+import yaml        # YAML configs (needs PyYAML, not standard)
+import csv         # CSV parsing
+import configparser  # INI configs
+import xml.etree.ElementTree as ET  # XML parsing
 
-# # 0. Print final inventory
-# print("Final inventory:")
-# for fruit, quantity in inventory.items():
-#     print(f"{fruit}: {quantity}")
 
-# print()
 
-# # 1. Check if a key exists
-# if "apples" in inventory:
-#     print("We have apples!")
 
-# # 2. Check if a key does not exist
-# if "pears" not in inventory:
-#     print("No pears in inventory.")
 
-# # 3. Get value with default if key is missing
-# apples_count = inventory.get("apples", 0)
-# print(f"Number of apples: {apples_count}")
 
-# pears_count = inventory.get("pears", 0)
-# print(f"Number of pears: {pears_count}")
 
-# # 4. Add a new item if not present
-# if "pears" not in inventory:
-#     inventory["pears"] = 7
-#     print("Added pears to inventory.")
+### --------------------------------------
+### Networking
+### --------------------------------------
+"""
 
-# # 5. Remove an item if present
-# if "grapes" in inventory:
-#     del inventory["grapes"]
-#     print("Removed grapes from inventory.")
+"""
 
-# # 6. Update value if key exists
-# if "bananas" in inventory:
-#     inventory["bananas"] += 2
-#     print(f"Updated bananas count: {inventory['bananas']}")
+import socket      # low-level network
+import http.client # HTTP requests
+import urllib.request  # simple HTTP ops
 
-# # 7. Loop through keys and check existence
-# for fruit in ["apples", "pears", "kiwi"]:
-#     if fruit in inventory:
-#         print(f"{fruit} is in inventory.")
-#     else:
-#         print(f"{fruit} is NOT in inventory.")
 
-# # 8. Using try/except for key access
-# try:
-#     print(f"Oranges: {inventory['oranges']}")
-# except KeyError:
-#     print("Oranges not found in inventory.")
 
-# # 9. Using setdefault to ensure a key exists
-# inventory.setdefault("kiwi", 0)
-# print(f"Kiwi count: {inventory['kiwi']}")
+
+
+
+### --------------------------------------
+### Date/time & logging
+### --------------------------------------
+"""
+
+"""
+import datetime    # timestamps
+import time        # sleeps, epoch
+import logging     # logging system events
+
+
+
+
+
+
+
+### --------------------------------------
+### CLI building
+### --------------------------------------
+"""
+
+"""
+import argparse    # command-line parsing
+import sys         # sys.argv access
+
+
+
 
 
 
@@ -314,6 +168,110 @@ print()
 """
 
 """
+
+
+
+
+
+
+
+### ========================================================================================
+### Popular External Libraries (pip install)
+### ========================================================================================
+
+
+
+### --------------------------------------
+### Cloud/Infra
+### --------------------------------------
+"""
+
+"""
+
+import boto3       # AWS SDK
+import google.cloud.storage  # GCP SDK
+import azure.mgmt.compute    # Azure SDK
+import kubernetes  # Kubernetes API
+
+
+
+
+
+
+### --------------------------------------
+### Infra tools
+### --------------------------------------
+"""
+
+"""
+import docker      # Docker API
+import hvac        # HashiCorp Vault
+import requests    # HTTP requests
+import paramiko    # SSH
+import fabric      # Remote exec + deploys
+
+
+
+
+
+
+
+### --------------------------------------
+### Config & serialization
+### --------------------------------------
+"""
+
+"""
+import yaml        # PyYAML for Kubernetes, Ansible, CI/CD
+import toml        # pyproject.toml configs
+
+
+
+
+
+
+
+### --------------------------------------
+### Testing/CI
+### --------------------------------------
+"""
+
+"""
+
+import unittest    # built-in testing
+import pytest      # advanced testing
+import mock        # mocking system calls
+
+
+
+
+
+
+### --------------------------------------
+### Utilities
+### --------------------------------------
+"""
+
+"""
+import re          # regex for parsing logs
+import hashlib     # checksums
+import base64      # encoding/decoding
+import glob        # match files
+import threading   # concurrency
+import multiprocessing  # parallel tasks
+import queue       # job queues
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -323,7 +281,7 @@ print()
 
 
 ### ========================================================================================
-### 
+### Most Common Imports in DevOps Scripts
 ### ========================================================================================
 
 
@@ -334,135 +292,19 @@ print()
 """
 
 """
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
-
-
-
-### ========================================================================================
-### 
-### ========================================================================================
-
-
-
-### --------------------------------------
-### 
-### --------------------------------------
-"""
-
-"""
-
-
-
-
-
+import os
+import sys
+import subprocess
+import json
+import yaml
+import argparse
+import shutil
+import logging
+import requests
+import boto3   # if cloud AWS
+import google.cloud.storage  # if cloud GCP
+import azure.mgmt.compute    # if cloud Azure
+import kubernetes  # if Kubernetes
 
 
 ### --------------------------------------
