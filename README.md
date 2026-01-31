@@ -24,8 +24,8 @@ Create namespace
 ```
 kubectl create secret generic aws-creds \
   -n shopsphere \
-  --from-literal=my-access-key=AKIAQHYZWNHQH7ZCCSMH\
-  --from-literal=my-secret-access-key=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
+  --from-literal=my-access-key=testing\
+  --from-literal=my-secret-access-key=testing
 ```
 
 Verify:
