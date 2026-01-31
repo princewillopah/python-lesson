@@ -1,0 +1,75 @@
+check version: python3 --version
+check installed pythons ls /usr/bin/python*
+
+Install newer versions
+
+Add a repository with newer Python versions
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt update
+
+# For Python 3.11
+    sudo apt install python3.11 python3.11-venv python3.11-dev
+
+# For Python 3.12
+    sudo apt install python3.12 python3.12-venv python3.12-dev
+
+# For Python 3.13
+    sudo apt install python3.13 python3.13-venv python3.13-dev
+
+# For Python 3.14
+    sudo apt install python3.14 python3.14-venv python3.14-dev
+
+python3.11 --version
+python3.12 --version
+python3.13 --version
+python3.14 --version
+
+
+
+----------------------------------------------------------------------------------------------------------
+Create ProjA with python version 3.10
+----------------------------------------------------------------------------------------------------------
+Create tow Dirs: projA projB projB
+Navigate to projA: ./projA
+Create virtual env: python3 -m venv .venv
+This will create a virtual environment in the .venv directory
+Activate it: source .venv/bin/activate
+You should see (.venv) in your prompt now.
+Check Python version:
+python --version
+Should match your system Python (3.10.12).
+
+
+Create a virtual environment with a specific Python version:
+Navigate to projB
+python3.14 -m venv myenv 
+source myenv/bin/activate 
+
+Verify:
+which python
+python --version
+pip --version
+
+
+Installing dependencies
+    pip install fastapi uvicorn sqlalchemy
+They install into:
+venv/lib/pythonX.Y/site-packages
+
+To deactive:
+ deactivate
+
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
