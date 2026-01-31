@@ -30,7 +30,7 @@ kubectl create secret generic aws-creds \
 
 Verify:
 ```
-kubectl describe secret aws-creds -n shopsphere 
+kubectl
 ```
 
 Output: 
