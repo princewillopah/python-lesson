@@ -1,3 +1,13 @@
+import os
+os.system('clear')
+
+print("----------------------------------------------------------------------------------------")
+print(" RESULTS")
+print("----------------------------------------------------------------------------------------")
+print()
+print()
+
+
 # Lists are used to store multiple items in a single variable.
 # The list is changeable, meaning that we can change, add, and remove items in a list after it has been created
 # Since lists are indexed, lists can have items with the same value //["apple", "banana", "cherry", "apple", "cherry"]
@@ -29,11 +39,25 @@
 # # OTHER VERY IMPORTANT USECASES
 # # -----------------------------------------------------------------------------------------------------------
 # # ____________ Check if Item Exists _________________________
-# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # if "apple" in thislist:
 #   print("Yes, 'apple' is in the fruits list") # Yes, 'apple' is in the fruits list
-#
-#
+#### example
+print
+guess=input("Guess the fruit you can find in the basket: ");
+
+if guess in fruits:
+        print(f"You guessed right, {guess} is on the list of fruits")
+else:
+    print(f"Wrong! {guess} is NOT on the list of fruits")
+
+
+print
+
+
+
+
+
 # # -----------------------------------------------------------------------------------------------------------
 # # UPDATE LIST
 # # -----------------------------------------------------------------------------------------------------------
@@ -497,3 +521,10 @@
 # remove()	Removes the first item with the specified value
 # reverse()	Reverses the order of the list
 # sort()	Sorts the list
+
+
+
+print()
+print()
+print("----------------------------------------------------------------------------------------")
+print()
